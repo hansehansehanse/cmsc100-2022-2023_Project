@@ -7,7 +7,7 @@ tap.mochaGlobals();
 describe('DB should work', async () => {
   it('should be able to read from DB', async () => {
     const db = await getDB();
-    db.feed.must.not.be.null();
+    db.blogs.must.not.be.null();
   });
 
   it('should be able to write to DB', async () => {
