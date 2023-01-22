@@ -1,52 +1,22 @@
 import Fastify from 'fastify';
-import { getDB, saveDB } from './utils/db/index.js';
-import { v4 } from 'uuid';
+
+import { general } from './services/general/index.js';
+
+import { createBlog } from './services/blogs/create-blog.js';
+import { getManyBlog } from './services/blogs/get-many-blog.js';
 
 const prefix = '/api';
 
 export async function build () {
-  // initialize fastify
   const fastify = Fastify({ logger: true });
 
-  fastify.get(prefix, async (request, reply) => {
-    return { success: true };
-  });
+  fastify.get(prefix, general);
+  // check app.js if errors occur
+  // create a blog page
+  fastify.post(`${prefix}/blog`, createBlog); // create-blogs.js
 
-  // create blog
-  fastify.post(`${prefix}/blog`, async (request, reply) => {
-    const { body } = request;
-    const { title, description } = body;
-    const db = await getDB();
-
-    const id = v4();
-
-    const blog = { // removed isDone
-      title,
-      description,
-      createdDate: new Date().getTime(),
-      updatedDate: new Date().getTime()
-    };
-
-    db.blogs[id] = blog;
-
-    await saveDB(db);
-
-    /**                                        //okk
-     * const newObj = {
-     *   id
-     * }
-     *
-     * for (const key in todo) {
-     *   newObj[key] = todo[key]
-     * }
-     *
-     * return newObj
-     */
-    return {
-      id,
-      ...blog
-    };
-  });
+  // get many blog
+  fastify.get(`${prefix}/blog`, getManyBlog); // get-many-blog.js
 
   return fastify;
 }
