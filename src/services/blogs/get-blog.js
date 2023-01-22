@@ -7,6 +7,10 @@ export const getBlog = async (request, reply) => { // still from coding session 
 
   const { blogs } = db;
 
+  if (!blogs[id]) { // after deleting prompt
+    return reply.notFound();
+  }
+
   return {
     id,
     ...blogs[id]
