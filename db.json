@@ -1,4 +1,13 @@
 {
+  "users": {
+    "hanse1": {
+      "hashedPassword": "$2b$10$9GhUR9Ks8.HMt0Zr5HX8RuyRznhbPZGYdb9iuaH1NBM/qeeBuD9ja",
+      "firstName": "Hanse",
+      "lastName": "Hernandez",
+      "createdDate": 1674745240200,
+      "updatedDate": 1674745240200
+    }
+  },
   "blogs": {
     "ba53c1c3-5b13-4d97-a699-08c97c482c16": {
       "title": "test blog 2",
