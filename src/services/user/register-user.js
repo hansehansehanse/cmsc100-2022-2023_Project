@@ -12,7 +12,7 @@ export const registerUser = async (request, reply) => {
 
   // if a username exists
   if (db.users[username]) {
-    return reply.badRequest('Username exists');
+    return reply.badRequest('Username already exists!');
   }
 
   const user = {

@@ -13,27 +13,6 @@
       "lastName": "Gillet",
       "createdDate": 1674746135559,
       "updatedDate": 1674746135559
-    },
-    "veroffu@example.com": {
-      "hashedPassword": "$2b$10$ndmSGK4WfEQXNJcs5n9.oubFT..cyIYaW7g2rXxWsF2BBaLOHNVKu",
-      "firstName": "Mason",
-      "lastName": "Diaz",
-      "createdDate": 1674746225246,
-      "updatedDate": 1674746225246
-    },
-    "nosuok@example.com": {
-      "hashedPassword": "$2b$10$x4ke4hNls4UuFPqwDaB2MuPug/0Nt8fhIilQgxSGHML91hoAD8L9.",
-      "firstName": "Lucille",
-      "lastName": "Martinez",
-      "createdDate": 1674746318456,
-      "updatedDate": 1674746318456
-    },
-    "lupfimmul@example.com": {
-      "hashedPassword": "$2b$10$MZunfU2.cC2HHMy9sMwmSOdSKrsdRjcAPBAC.VcnjTIXYI8KShPuy",
-      "firstName": "Louisa",
-      "lastName": "Giannetti",
-      "createdDate": 1674746370075,
-      "updatedDate": 1674746370075
     }
   },
   "blogs": {
@@ -54,67 +33,6 @@
       "description": "test2",
       "createdDate": 1674724744899,
       "updatedDate": 1674724744899
-    },
-    "b4f70457-ba84-4316-a584-c6e46b1b4415": {
-      "title": "New Blog Post1 from from get-blog.test",
-      "description": "New Description1 from from get-blog.test",
-      "createdDate": 1674746317952,
-      "updatedDate": 1674746317952
-    },
-    "ac1dc894-a40a-4250-8b00-33c8a512cd21": {
-      "title": "New Blog Post2 from from update-blog.test",
-      "description": "New Description2 from from update-blog.test",
-      "createdDate": 1674746318146,
-      "updatedDate": 1674746318154
-    },
-    "bceee85c-58ee-4e39-94d3-8464bd150da3": {
-      "title": "Newer Blog4 test",
-      "description": "New Description3 test",
-      "createdDate": 1674746318348,
-      "updatedDate": 1674746318349
-    },
-    "5f098da5-e1ef-46f0-b8b5-9b76ab8dc8ca": {
-      "title": "New Blog5 test",
-      "description": "Newer Description6 test",
-      "createdDate": 1674746318352,
-      "updatedDate": 1674746318353
-    },
-    "b0de7183-08e7-4360-9a4c-7ba4f93787c8": {
-      "title": "New Blog Post1",
-      "description": "New Description1",
-      "createdDate": 1674746318446,
-      "updatedDate": 1674746318446
-    },
-    "2015bd71-5eb5-4b39-871a-2e05dab0db11": {
-      "title": "New Blog Post1",
-      "description": "New Description1",
-      "createdDate": 1674746369661,
-      "updatedDate": 1674746369661
-    },
-    "c718f755-dc68-427f-8e79-87f777019ff9": {
-      "title": "New Blog Post1 from from get-blog.test",
-      "description": "New Description1 from from get-blog.test",
-      "createdDate": 1674746369667,
-      "updatedDate": 1674746369667
-    },
-    "09597cb0-cc49-4521-afda-43eeae0ccc88": {
-      "title": "New Blog Post2 from from update-blog.test",
-      "description": "New Description2 from from update-blog.test",
-      "createdDate": 1674746369788,
-      "updatedDate": 1674746369846
-    },
-    "92915180-fea0-496b-8adb-676917118ca6": {
-      "title": "Newer Blog4 test",
-      "description": "New Description3 test",
-      "createdDate": 1674746369853,
-      "updatedDate": 1674746369864
-    },
-    "92f3dd2e-daee-4fa2-85b5-503608e0c9ee": {
-      "title": "New Blog5 test",
-      "description": "Newer Description6 test",
-      "createdDate": 1674746369868,
-      "updatedDate": 1674746369869
     }
-  },
-  "test": 1674746367453
+  }
 }
