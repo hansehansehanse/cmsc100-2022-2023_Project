@@ -2,14 +2,20 @@ import Fastify from 'fastify';
 
 import sensible from '@fastify/sensible';
 
-import { general } from './services/general/index.js';
+// import { general } from './services/general/index.js';
 
-import { createBlog } from './services/blogs/create-blog.js';
-import { getManyBlog } from './services/blogs/get-many-blog.js';
-import { getBlog } from './services/blogs/get-blog.js';
+// import { createBlog } from './services/blogs/create-blog.js';
+// import { getManyBlog } from './services/blogs/get-many-blog.js';
+// import { getBlog } from './services/blogs/get-blog.js';
 
-import { updateBlog } from './services/blogs/update-blog.js';
-import { deleteBlog } from './services/blogs/delete-blog.js';
+// import { updateBlog } from './services/blogs/update-blog.js';
+// import { deleteBlog } from './services/blogs/delete-blog.js';
+
+import openAPIGlue from 'fastify-openapi-glue';
+import swagger from '@fastify/swagger';
+
+import { specification } from './specification/index.js';
+import { Service } from './services/index.js';
 
 const prefix = '/api';
 
@@ -17,23 +23,41 @@ export async function build () {
   const fastify = Fastify({ logger: true }); // initialization
   fastify.register(sensible);
 
-  fastify.get(prefix, general);
-  // check app.js if errors occur
+  const service = new Service();
 
-  // create a blog post
-  fastify.post(`${prefix}/blog`, createBlog); // create-blogs.js
+  const openAPIGlueOptions = {
+    specification,
+    service,
+    prefix
+  };
 
-  // get many blog post
-  fastify.get(`${prefix}/blog`, getManyBlog); // get-many-blog.js
+  const swaggerOptions = {
+    openapi: specification,
+    routePrefix: '/docs',
+    exposeRoute: true
+  };
 
-  // get single blog post
-  fastify.get(`${prefix}/blog/:blogId`, getBlog); // get-blog.js         //:blogId... a path not a var
+  fastify.register(swagger, swaggerOptions);
 
-  // update a blog post
-  fastify.put(`${prefix}/blog/:blogId`, updateBlog);
+  fastify.register(openAPIGlue, openAPIGlueOptions);
 
-  // delete a blog post
-  fastify.delete(`${prefix}/blog/:blogId`, deleteBlog);
+  // fastify.get(prefix, general);
+  // // check app.js if errors occur
+
+  // // create a blog post
+  // fastify.post(`${prefix}/blog`, createBlog); // create-blogs.js
+
+  // // get many blog post
+  // fastify.get(`${prefix}/blog`, getManyBlog); // get-many-blog.js
+
+  // // get single blog post
+  // fastify.get(`${prefix}/blog/:blogId`, getBlog); // get-blog.js         //:blogId... a path not a var
+
+  // // update a blog post
+  // fastify.put(`${prefix}/blog/:blogId`, updateBlog);
+
+  // // delete a blog post
+  // fastify.delete(`${prefix}/blog/:blogId`, deleteBlog);
 
   return fastify;
 }

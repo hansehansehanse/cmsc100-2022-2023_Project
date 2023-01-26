@@ -39,14 +39,11 @@ describe('Deleting a blog postttt should work', async () => {
 
     result.success.must.be.true();
 
-
-
-    const getResponse = await app.inject({                  //?
+    const getResponse = await app.inject({ // ?
       method: 'GET',
       url: `${prefix}/blog/${id}`
     });
 
     getResponse.statusCode.must.be.equal(404);
-    
   });
 });
