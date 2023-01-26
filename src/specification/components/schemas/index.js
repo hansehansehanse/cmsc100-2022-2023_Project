@@ -80,6 +80,6 @@ export const schemas = {
       updatedDate: {
         type: 'number'
       }
-    }  
+    }
   }
 };

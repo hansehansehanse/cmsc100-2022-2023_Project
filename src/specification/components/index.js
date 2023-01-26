@@ -8,5 +8,5 @@ export const components = {
   parameters,
   schemas,
   requestBodies,
-  responses,
+  responses
 };
