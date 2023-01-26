@@ -1,4 +1,6 @@
 import { paths } from "./paths/index.js"
+import { components } from './components/index.js';
+
 
 export const specification = {
     openapi: '3.0.0',
@@ -7,43 +9,5 @@ export const specification = {
         version: '0.0.1'
     },
     paths,
-    components: {
-        schemas: {
-          BlogObject: {
-                type: 'object',
-                properties: {
-                    id: {
-                        type: 'string'
-                    },
-                    title: {
-                        type: 'string'
-                    },
-                    description: {
-                        type: 'string'
-                    },
-                    createdDate: {
-                        type: 'number'
-                    },
-                    updatedDate: {
-                        type: 'number'
-                    }
-                }
-            },
-            BlogRequestRequiredObject: {
-                type: 'object',
-                properties: {
-                    title: {
-                        type: 'string'
-                    },
-                    description: {
-                        type: 'string'
-                    }
-                },
-                required: [
-                    'title',
-                    'description'
-                ]
-            }
-        }
-    }
-};
+    components
+  };
