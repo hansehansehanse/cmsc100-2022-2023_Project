@@ -7,6 +7,8 @@ import { getBlog } from './blogs/get-blog.js';
 import { updateBlog } from './blogs/update-blog.js';
 import { deleteBlog } from './blogs/delete-blog.js';
 
+import { registerUser } from './user/register-user.js';
+
 export class Service {
   constructor (app) {
     this.app = app;
@@ -18,4 +20,6 @@ export class Service {
     getManyBlog = getManyBlog
     getBlog = getBlog
     updateBlog = updateBlog
+
+    registerUser = registerUser
 }
