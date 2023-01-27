@@ -12,6 +12,8 @@ import cookie from '@fastify/cookie';
 import session from '@fastify/secure-session';
 import jwt from '@fastify/jwt';
 
+import { Security } from './security/index.js';
+
 const prefix = '/api';
 
 export async function build () {
@@ -39,10 +41,13 @@ export async function build () {
 
   const service = new Service();
 
+  const securityHandlers = new Security(fastify);
+
   const openAPIGlueOptions = {
     specification,
     service,
-    prefix
+    prefix,
+    securityHandlers
   };
 
   const swaggerOptions = {
