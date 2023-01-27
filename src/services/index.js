@@ -9,6 +9,9 @@ import { deleteBlog } from './blogs/delete-blog.js';
 
 import { registerUser } from './user/register-user.js';
 
+import { login } from './user/login.js';
+import { logout } from './user/logout.js';
+
 export class Service {
   constructor (app) {
     this.app = app;
@@ -22,4 +25,7 @@ export class Service {
     updateBlog = updateBlog
 
     registerUser = registerUser
+
+    login = login
+    logout = logout
 }

@@ -13,6 +13,41 @@
       "lastName": "Gillet",
       "createdDate": 1674746135559,
       "updatedDate": 1674746135559
+    },
+    "ade@example.com": {
+      "hashedPassword": "$2b$10$9woNY685EPuJbS.Ikz1lRuQLTbsjgrDv35o1LHpTtFbR0JEdfWLLO",
+      "firstName": "Elnora",
+      "lastName": "Niccolini",
+      "createdDate": 1674836508701,
+      "updatedDate": 1674836508701
+    },
+    "vasel@example.com": {
+      "hashedPassword": "$2b$10$/SORevug9zdEPSgHhPk1cudwkdOVw.7urw9MfbkXjwwDCUCrLjVxa",
+      "firstName": "Vera",
+      "lastName": "Fanetti",
+      "createdDate": 1674836510390,
+      "updatedDate": 1674836510390
+    },
+    "bo@example.com": {
+      "hashedPassword": "$2b$10$o1Dn/FP1q0p9.q3WL5BjAemsCHl97rmVUy2FdvWiCcYtGsXvQG7z2",
+      "firstName": "Douglas",
+      "lastName": "Marchese",
+      "createdDate": 1674836801206,
+      "updatedDate": 1674836801206
+    },
+    "ehdu@example.com": {
+      "hashedPassword": "$2b$10$aZqEupb4ushFUKq3mwHqCemx79QXvYu0AxOLdR1PbckJFpW2bvbr.",
+      "firstName": "Sophia",
+      "lastName": "Tucci",
+      "createdDate": 1674836802116,
+      "updatedDate": 1674836802116
+    },
+    "la@example.com": {
+      "hashedPassword": "$2b$10$IeAceu.JvCvWi7kXkEHTKeYdwr3.pbj4c0vkIVl9VOSbaaUL1/nwq",
+      "firstName": "Sara",
+      "lastName": "Chiari",
+      "createdDate": 1674836804559,
+      "updatedDate": 1674836804559
     }
   },
   "blogs": {
@@ -33,6 +68,79 @@
       "description": "test2",
       "createdDate": 1674724744899,
       "updatedDate": 1674724744899
+    },
+    "725bb9d9-6e66-4b72-9824-52818c645614": {
+      "title": "New Blog Post1 from from get-blog.test",
+      "description": "New Description1 from from get-blog.test",
+      "createdDate": 1674836232727,
+      "updatedDate": 1674836232727
+    },
+    "4679aaba-3a12-43ec-8de0-d65a36083bda": {
+      "title": "New Blog Post1",
+      "description": "New Description1",
+      "createdDate": 1674836233192,
+      "updatedDate": 1674836233192
+    },
+    "29811be8-b5a9-47e3-84f3-032d712fc666": {
+      "title": "New Blog Post1 from from get-blog.test",
+      "description": "New Description1 from from get-blog.test",
+      "createdDate": 1674836507615,
+      "updatedDate": 1674836507615
+    },
+    "a4abff86-8d40-43a2-8a9d-f22f9efdb412": {
+      "title": "New Blog Post2 from from update-blog.test",
+      "description": "New Description2 from from update-blog.test",
+      "createdDate": 1674836508691,
+      "updatedDate": 1674836508700
+    },
+    "d7891d0e-ddfb-425c-a12b-ebcb97d1a991": {
+      "title": "Newer Blog4 test",
+      "description": "New Description3 test",
+      "createdDate": 1674836508909,
+      "updatedDate": 1674836508911
+    },
+    "0174c258-c570-488f-9e7c-047f827b47a1": {
+      "title": "New Blog5 test",
+      "description": "Newer Description6 test",
+      "createdDate": 1674836508914,
+      "updatedDate": 1674836508992
+    },
+    "f1165675-0c1e-411d-8f76-5f63976ded78": {
+      "title": "New Blog Post1",
+      "description": "New Description1",
+      "createdDate": 1674836508998,
+      "updatedDate": 1674836508998
+    },
+    "d9355341-e7b6-46b0-ae8d-0acb5640de7d": {
+      "title": "New Blog Post1",
+      "description": "New Description1",
+      "createdDate": 1674836801021,
+      "updatedDate": 1674836801021
+    },
+    "a48ac80c-662c-4e64-8ae4-3398c7f6132e": {
+      "title": "New Blog Post2 from from update-blog.test",
+      "description": "New Description2 from from update-blog.test",
+      "createdDate": 1674836801327,
+      "updatedDate": 1674836801398
+    },
+    "a78720e3-a0da-4da0-876a-ab22bf74bc2c": {
+      "title": "New Blog Post1 from from get-blog.test",
+      "description": "New Description1 from from get-blog.test",
+      "createdDate": 1674836801392,
+      "updatedDate": 1674836801392
+    },
+    "a51708e2-059e-44c7-bf23-e99d42051beb": {
+      "title": "Newer Blog4 test",
+      "description": "New Description3 test",
+      "createdDate": 1674836801415,
+      "updatedDate": 1674836801417
+    },
+    "daf06ef0-2434-46c8-bea7-dcfc49ecab1d": {
+      "title": "New Blog5 test",
+      "description": "Newer Description6 test",
+      "createdDate": 1674836801490,
+      "updatedDate": 1674836801492
     }
-  }
+  },
+  "test": 1674836793009
 }
