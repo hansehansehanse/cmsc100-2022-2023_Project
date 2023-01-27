@@ -6,6 +6,7 @@ export class Security {
   }
 
   async cookieAuth (request, reply) {
+    // console.log('secu!')
     try {
       const token = request.session.get('token');
       const { username } = await this.app.jwt.verify(token);

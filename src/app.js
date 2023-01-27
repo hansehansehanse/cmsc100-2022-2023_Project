@@ -19,8 +19,6 @@ const prefix = '/api';
 export async function build () {
   const fastify = Fastify({ logger: true }); // initialization
 
-
-
   fastify.register(cookie);
   fastify.register(session, {
     secret: 'A long string for the cookie secret',
@@ -34,8 +32,6 @@ export async function build () {
   fastify.register(jwt, {
     secret: 'A long string for the jwt secret'
   });
-
-
 
   fastify.register(sensible);
 
@@ -59,8 +55,6 @@ export async function build () {
   fastify.register(swagger, swaggerOptions);
 
   fastify.register(openAPIGlue, openAPIGlueOptions);
-
- 
 
   return fastify;
 }
