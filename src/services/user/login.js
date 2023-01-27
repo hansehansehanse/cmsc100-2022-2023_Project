@@ -15,11 +15,11 @@ export const login = async (request, reply) => {
     return reply.unauthorized('Incorrect password');
   }
 
-//   const token = await reply.jwtSign({
-//     username
-//   });
+  const token = await reply.jwtSign({
+    username
+  });
 
-//   request.session.set('token', token);
+  request.session.set('token', token);
 
   return {
     success: true
