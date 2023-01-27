@@ -71,6 +71,9 @@
     ]
   },
   "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/jwt": "^6.5.0",
+    "@fastify/secure-session": "^6.0.0",
     "@fastify/sensible": "^5.2.0",
     "bcrypt": "^5.1.0",
     "fastify": "^4.11.0",
